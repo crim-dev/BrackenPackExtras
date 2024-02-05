@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['[[\"CLICK A SPECIES\\\\n\\\\n\",{\"text\":\"Automech\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.automech\"},\"color\":\"green\"},\"\\\\n\\\\n\",{\"text\":\"Dweller\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.dweller\"},\"color\":\"dark_gray\"},\"\\\\n\\\\n\",{\"text\":\"Enderling\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.enderling\"},\"color\":\"light_purple\"},\"\\\\n\\\\n\",{\"text\":\"Faefolk\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.faefolk\"},\"color\":\"blue\"},\"\\\\n\\\\n\",{\"text\":\"Frostkin\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.frostkin\"},\"color\":\"aqua\"},\"\\\\n\\\\n\",{\"text\":\"Human\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.human\"},\"color\":\"red\"}]]','[[\"CLICK A SPECIES\\\\n\\\\n\",{\"text\":\"Hunter\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.hunter\"},\"color\":\"dark_green\"},\"\\\\n\\\\n\",{\"text\":\"Nereid\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.nereid\"},\"color\":\"dark_blue\"},\"\\\\n\\\\n\",{\"text\":\"Netherkin\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.netherkin\"},\"color\":\"gold\"},\"\\\\n\\\\n\",{\"text\":\"Outlander\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.outlander\"},\"color\":\"gray\"},\"\\\\n\\\\n\",{\"text\":\"Realmkeeper\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.realmkeeper\"},\"color\":\"yellow\"},\"\\\\n\\\\n\",{\"text\":\"Villain\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/trigger bp.villain\"},\"color\":\"dark_red\"}]]'],title:\"BOOK OF REFORGED ANCESTRY\",author:\"The Provider\",generation:3,CustomModelData:888501,bp.species_book:10b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "Species Beginner Book",
+                  "color": "white",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Use to join a species.",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
