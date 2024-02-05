@@ -30,5 +30,7 @@ Discarded :
 ## Contributing
 
 We accept pull requests. Make sure to write your code coherently.
+
 Every scoreboard and entity tag is set under the `bp` namespace (e.g. `bp.entity`, `bp.boss`)
-A more detailed guide is to be written. 
+
+A more detailed guide has yet to be written. 
