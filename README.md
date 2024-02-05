@@ -15,34 +15,31 @@ This is NOT the real Github repository for the Bracken Pack.
 ## Features 
 Currently introduced : 
 
-- Nothing here.
+- Hovering text to BSB (jakerson_)
 
 Planned : 
 
 - Custom Enchantments Beta (dev team)
 - Brine Portal explorer map (RaspyHarmony101)
+- More advancements (SixLuckyBlocks)
+- Resistance 5 instead of Weakness 10 in Pax (clanyfonelyx)
+- Brine fishing loot (pea_sh0ter#4650)
 
 Noticed : 
 
-- More advancements (SixLuckyBlocks)
 - Vitality helmet (SixLuckyBlocks)
 - Crystal Caves explorer map / locater (SixLuckyBlocks)
 
 - Make dwellers consume ore rather than food (The_Crocs_Man)
 
 - Species tweaks (jakerson_)
-- Hovering text to BSB (jakerson_)
-
-- Sculk species (Player)
 
 - Replace the tinted glass bubble during void travel (clanyfonelyx)
-- Resistance 5 instead of Weakness 10 in Pax (clanyfonelyx)
 - Secret achievement for visiting all dimensions (clanyfonelyx)
 
 - Custom armor trims for each dimension (by PaleFlesh)
 
 - Brine geysers (pea_sh0ter#4650)
-- Brine fishing loot (pea_sh0ter#4650)
 
 - RPG-style titles (j8ck)
 
@@ -53,7 +50,10 @@ Noticed :
 
 Discarded : 
 
-- Nothing here.
+- Sculk species (Player)
+Just no. We already have enough on our hands from battling the Void, we don't need another anomaly, thank you.
+
+
 
 ## Contributing
 
