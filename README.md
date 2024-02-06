@@ -10,6 +10,8 @@ __This is NOT the real Github repository for the Bracken Pack.__
 
 __Any implemented features are NOT guaranteed to make it into the official release; this is just a place for the community to see how things could turn out with their suggested features.__
 
+_There is no guarantee placed on the "up-to-datedness" of this repository relative to the Bracken Pack's official releases, although I (crimdev) will make an effort to keep it at most 2 versions / 2 months behind._
+
 ## Presentation
 
 This is a version of the Bracken Datapack that aims at introducing community suggestions as well as other, unofficial projects for the sake of testing, archiving and openness with the community's members who are interested in contributing.
