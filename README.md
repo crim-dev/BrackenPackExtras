@@ -7,7 +7,8 @@ ORIGINAL PACK (PLANET MINECRAFT DOWNLOAD) : [LINK](https://www.planetminecraft.c
 ## Disclaimer
 
 __This is NOT the real Github repository for the Bracken Pack.__
-__Any implemented features are NOT guaranteed to make it into the main pack.__
+
+__Any implemented features are NOT guaranteed to make it into the official release; this is just a place for the community to see how things could turn out with their suggested features.__
 
 ## Presentation
 
