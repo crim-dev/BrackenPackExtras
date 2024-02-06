@@ -4,13 +4,17 @@
 
 ORIGINAL PACK (PLANET MINECRAFT DOWNLOAD) : [LINK](https://www.planetminecraft.com/data-pack/the-bracken-pack/)
 
+## Disclaimer
+
+__This is NOT the real Github repository for the Bracken Pack.__
+__Any implemented features are NOT guaranteed to make it into the main pack.__
+
 ## Presentation
 
 This is a version of the Bracken Datapack that aims at introducing community suggestions as well as other, unofficial projects for the sake of testing, archiving and openness with the community's members who are interested in contributing.
 
 Currently on version _v99_ of the Datapack
 
-This is NOT the real Github repository for the Bracken Pack.
 
 ## Features 
 Currently introduced : 
