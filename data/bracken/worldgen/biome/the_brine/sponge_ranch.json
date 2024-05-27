@@ -17,6 +17,12 @@
       "weight": 20,
       "minCount": 1,
       "maxCount": 4
+    },
+    {
+      "type": "minecraft:drowned",
+      "weight": 4,
+      "minCount": 2,
+      "maxCount": 5
     }
       
     ],
@@ -115,8 +121,7 @@
       "min_delay": 1200,
       "max_delay": 2400,
       "replace_current_music": true
-    },
-    "ambient_sound": "minecraft:ambient.underwater.loop"
+    }
   },
   "has_precipitation": true
 }

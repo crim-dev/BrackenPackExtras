@@ -24,7 +24,7 @@
         "max_exclusive": 1
       }
     },
-    "floor_to_ceiling_search_range": 190,
+    "floor_to_ceiling_search_range": 100,
     "column_radius": {
       "type": "minecraft:uniform",
       "value": {

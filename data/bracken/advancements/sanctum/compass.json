@@ -1,0 +1,38 @@
+{
+    "parent": "bracken:sanctum/enter_sanctum",
+    "display": {
+        "title": {
+            "translate": "Entanglement Effect"
+        },
+        "description": {
+            "translate": "Break an unruly compass with your teeth",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:apple",
+            "nbt": "{CustomModelData:888519}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bracken:sanctum/compass1": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:apple"
+                    ],
+                    "nbt": "{bp:{id:\"unruly_compass\"}}"
+                }
+              }
+        }
+    },
+    "requirements": [
+        [
+            "bracken:sanctum/compass1"
+        ]
+    ]
+}

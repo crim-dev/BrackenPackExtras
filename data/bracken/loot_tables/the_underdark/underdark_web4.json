@@ -17,6 +17,7 @@
             }
           ]
         },
+        
         {
           "type": "loot_table",
           "name": "bracken:item/ability_books/fireball",
@@ -64,6 +65,16 @@
             {
               "condition": "minecraft:random_chance",
               "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "name": "bracken:item/metal_apples/iron_apple",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
             }
           ]
         },

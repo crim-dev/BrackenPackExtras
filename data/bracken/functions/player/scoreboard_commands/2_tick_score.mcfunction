@@ -10,7 +10,7 @@ scoreboard players set @s bp.walk 0
 scoreboard players set @s bp.swim 0
 scoreboard players set @s[scores={bp.fly=1..}] bp.fly 0
 scoreboard players set @s[scores={bp.jump=2..}] bp.jump 1
-
+execute if score #cooldown bp.varskstorm matches 1.. run scoreboard players remove #cooldown bp.varskstorm 1
 
 scoreboard players set @s[scores={bp.sprint=1..}] bp.sprint 0
 scoreboard players remove @s bp.obsidian 1
@@ -36,4 +36,5 @@ execute if score @s bp.giant matches 1.. run function bracken:ability_books/swor
 execute if score @s bp.astral_time matches 1.. run function bracken:player/potion/astral_projection/tick
 execute if score @s bp.greed_duration matches 1.. run function bracken:player/potion/greed/tick
 
-
+# Outlander backstab logic
+execute as @a[tag=bp.outlander] run function bracken:player/species/outlander/backstab/2t

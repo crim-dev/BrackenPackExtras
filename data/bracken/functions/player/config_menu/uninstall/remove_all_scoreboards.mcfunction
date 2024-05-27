@@ -113,15 +113,7 @@ scoreboard objectives remove bp.armor
 scoreboard objectives remove bp.absorption 
 
 ##########   CONFIG MENU  ##########
-scoreboard objectives remove bp.nether_height_con 
-scoreboard objectives remove bp.end_height_con 
-
-scoreboard objectives remove bp.dimension_travel_con 
-scoreboard objectives remove bp.teams_con 
-scoreboard objectives remove bp.species_con 
-scoreboard objectives remove bp.bsb_con 
-scoreboard objectives remove bp.books_con 
-scoreboard objectives remove bp.portal_keys_con 
+scoreboard objectives remove bp.config
 
 ##########   REMOVE FORCELOAD  ##########
 scoreboard objectives remove bp.xchunk 
@@ -187,6 +179,9 @@ scoreboard objectives remove bp.ice
 
 # Omnidrome
 scoreboard objectives remove bp.spawn_loading 
+
+# Void
+scoreboard objectives remove bp.voidtp
 
 ##########   PAX PORTAL   ##########
 scoreboard objectives remove bp.portal_R 

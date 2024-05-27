@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:count_on_every_layer",
-      "count": 1
+      "count": 2
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -21,8 +21,7 @@
               0
             ],
             "blocks": [
-              "minecraft:cracked_deepslate_bricks",
-              "minecraft:clay",
+              "minecraft:cracked_polished_blackstone_bricks",
               "minecraft:stone"
             ]
           },
@@ -36,7 +35,7 @@
                 0
               ],
               "blocks": [
-                "minecraft:cracked_polished_blackstone_bricks",
+                "minecraft:cracked_deepslate_bricks",
                 "minecraft:white_concrete_powder",
                 "minecraft:tuff",
                 "minecraft:blackstone",
@@ -52,3 +51,4 @@
     }
   ]
 }
+
