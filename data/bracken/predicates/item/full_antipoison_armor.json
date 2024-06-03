@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head": {
+				"predicates": { "minecraft:custom_data": "{bp:{enchants:[{id:\"poisonres\"}]}}" }
+			},
+			"chest": {
+				"predicates": { "minecraft:custom_data": "{bp:{enchants:[{id:\"poisonres\"}]}}" }
+			},
+			"legs": {
+				"predicates": { "minecraft:custom_data": "{bp:{enchants:[{id:\"poisonres\"}]}}" }
+			},
+			"feet": {
+				"predicates": { "minecraft:custom_data": "{bp:{enchants:[{id:\"poisonres\"}]}}" }
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "custom_data": {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "bracken:player/custom_enchants/poisoning/on_hit"
+    }
+}

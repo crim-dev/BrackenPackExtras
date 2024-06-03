@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "poison": {}
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "bracken:player/custom_enchants/poison_resistance/on_poison"
+    }
+}

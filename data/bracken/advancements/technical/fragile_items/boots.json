@@ -6,7 +6,9 @@
           "player": {
             "equipment": {
               "feet": {
-                "nbt": "{bp:{id:\"fragile\"}}"
+                "predicates": {
+                  "minecraft:custom_data": "{bp:{id:\"fragile\"}}"
+                }
               }
             }
           }

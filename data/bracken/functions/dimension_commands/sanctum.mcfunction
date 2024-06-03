@@ -3,6 +3,8 @@
 # Creators: Bracken
 ##########################################################
 
+#scoreboard players set @s bp.sanctum 10
+
 # Effects
 effect give @s[scores={bp.longtick=5},tag=!bp.outlander] minecraft:invisibility 13 0 true
 effect clear @s[tag=bp.outlander] minecraft:invisibility

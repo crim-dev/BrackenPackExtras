@@ -3,9 +3,11 @@
 # Creators: Bracken
 ##########################################################
 
+#scoreboard players set @s bp.dormis 10
+
 # Effects
-effect give @s[scores={bp.longtick=2}] minecraft:slowness 13 0 true
-effect give @s[scores={bp.longtick=2}] minecraft:bad_omen 100000 10 true
+#effect give @s[scores={bp.longtick=2}] minecraft:slowness 13 0 true
+effect give @s[scores={bp.longtick=2}] minecraft:bad_omen infinite 10 true
 effect give @s[scores={bp.longtick=10}] minecraft:resistance 3 9 false
 
 # Mobs
