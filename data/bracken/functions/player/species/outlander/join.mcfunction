@@ -11,4 +11,6 @@ attribute @s minecraft:player.block_interaction_range modifier add 27aec3e8-ed03
 
 scoreboard players set @s bp.outlander_charge 0
 
+execute if predicate bracken:dimensions/sanctum run advancement grant @s only bracken:sanctum/outlander
+
 return 1

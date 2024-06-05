@@ -13,4 +13,6 @@ attribute @s minecraft:generic.armor modifier add 8a346447-3af8-4f78-bbc4-c94433
 attribute @s minecraft:generic.knockback_resistance modifier add b3d948ab-3af5-4ae8-a8bb-f962bfa3081e "bp.automech.knockback_resistance" 0.65 add_value
 attribute @s minecraft:generic.movement_speed modifier add 47e0531e-4a16-4be7-b48c-e9da94fa64ce "bp.automech.movement_speed" -0.022 add_value
 
+execute if predicate bracken:dimensions/omnidrome run advancement grant @s only bracken:omnidrome/return
+
 return 1

@@ -145,7 +145,7 @@ Fixed the item icon specification in advancement the_faewild/theatre
 
 
 
---- Merged my edits with the updated version Crimdev posted in the discord ----
+---- Merged my edits with the updated version Crimdev posted in the discord ----
 
 
 
@@ -153,3 +153,94 @@ Fixing Predicates:
 	It seems that many of the predicates in the pack, particularly the item predicates, weren't properly updated to 1.20.6. I've gone ahead and updated all predicates.
 
 Fixed Bug: Some functions under book_of_arbitruim/ask_race had no \ for line breaks, which caused the functions to stop loading.
+
+
+
+---- Merged this pack with the Hunter-Apple bugfix introduced by Crimdev ----
+
+
+
+More Item/Scoreboard Optimization:
+
+Commented all code pertaining to the following unused scoreboard objectives (in function item/main):
+	- bp.altum_archeon
+	- bp.piercer_of_heavens
+
+Fixed Bug: Changed "slots"->"equipment" and "weapon.mainhand"->"mainhand" in the following advancements:
+	- technical/cleaver_of_judgement
+	- technical/gothrum_fang
+
+
+
+Bugs Identified:
+	All of the "omnitrigger" advancements and their respective functions have some major issues.
+
+Removed all advancements under the folder technical/omnitrigger/ which specify a carrot on a stick with "using_item". (These were all the advancements starting with the letter "p".) This trigger doesn't work with the carrot on a stick, so these advancements were doing nothing.
+
+Removed all functions under player/omnitrigger/ beginning with "p"
+	These functions were only called by the removed advancements, and their functionality is already present elsewhere in the pack (within the ability book files), making them redundant
+
+Edited advancements technical/omnitrigger/<advancement>:
+	Changed the entity_properties predicate to a location_check predicate ("b" advancements)
+	Changed "biome"->"biomes" to conform to new 1.20.6 format ("b" advancements)
+	Changed the names of the criteria to avert existing softlocks (see function bugfix above)
+
+Removed advancement technical/omnitrigger/k_disruptor
+	Functionality has been moved to the display advancement omnidrome/kill_boss
+	I saw that Project Ruination already works like this, so I changed it for consistency
+
+
+
+"Alphie" dog command is now advancement-driven:
+	Added advancement technical/alphie and function entities/alphie
+	Removed alphie command from function 10_seconds
+	Fixed bugs with the components on the Alphie respawn egg
+
+
+
+Reducing Lag from Display Advancements (and making them more responsive):
+
+Changed dimension advancements from a "location" trigger to a "changed_dimension" trigger:
+	- bri, dor, fae, gla, omn, pan, pax, san, und, var, voi
+	- glacium/enter_glacium
+	- omnidrome/enter_omnidrome
+	- omnidrome/return
+		Function player/species/automech/join now also directly grants this advancement if in Omnidrome
+	- panacea/enter_panacea
+	- pax/enter_pax
+	- sanctum/enter_sanctum
+	- sanctum/outlander
+		Function player/species/outlander/join now also directly grants this advancement if in Sanctum
+	- the_brine/enter_the_brine
+	- the_faewild/enter_the_faewild
+	- the_underdark/enter_underdark
+
+Changed effect advancements from a "location" trigger to an "effects_changed" trigger:
+	- glacium/fatigue
+	- glacium/water
+	- the_brine/weakness
+	- the_underdark/gas
+
+
+
+Fixed Bug: Removed function entities/pax/pax_entities(unused)
+	This function had been printing errors to the server logs for having an invalid name
+	Commands were moved to entities/pax/pax_entities, and commented out
+
+
+
+Attempting to fix the "MIN function" error logs:
+	The source of these errors is the game warning you about redundant code. In some worldgen/noise_settings files, there are defined density functions that the game doesn't like even though they technically work properly, so it prints warnings to the server logs fully detailing every part of this function, which results in the logs getting flooded with near-unreadable information. However, after considerable effort, I was able to deduce what it was actually saying, and I found the part of the code that causes it.
+	There's a "min" function that's taking the minimum of two inputs. The first is a function that always returns a positive value, and the second is zero. Zero will always be less than that positive function, so the positive one will never be referenced, and this is why the game is freaking out. It appears to me that whoever made this worldgen file was tampering with experimental settings, and they wanted to disable their code without actually deleting their work. You can't comment out code in a JSON file, so they decided to introduce a function that never actually used this code on purpose. (Again, this is just speculation on my part.)
+	I'm attempting a more clean fix.
+
+Added datapack folder data/bracken/worldgen/density_function_unsed:
+	The game will never read anything in this folder, so anything can go here without any consequences. I'll be putting the problematic code into this folder - for example, if a function always returns 0, I'll replace it with just the value 0 in the actual code, and put the removed function here. See the README.txt in that folder for more info.
+
+I've carried out this process for the following files:
+	- noise_settings/omnidrome: Replaced the function starting on line 92 with a 0, moved to density_function_unused/noisesettings_omnidrome_line92
+
+Edited noise_settings file "the_brine":
+	The issue here was actually that the big complicated function was ALWAYS being referenced, and the input on the other side (which is just a value of 1) was being ignored. I went ahead and just deleted that value of 1.
+
+After doing this, it looks like all the MIN warnings are actually gone. Mission success.

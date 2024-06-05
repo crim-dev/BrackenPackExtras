@@ -47,7 +47,9 @@
 					}],
 					"minecraft:custom_model_data": 888502,
 					"minecraft:custom_data": {
-						"tags": ["bp.fire_immune"]
+						"tags": [
+							"bp.fire_immune"
+						]
 					}
 				}
 			}]
