@@ -4,22 +4,33 @@
 
 ORIGINAL PACK (PLANET MINECRAFT DOWNLOAD) : [LINK](https://www.planetminecraft.com/data-pack/the-bracken-pack/)
 
+BRACKEN PACK EXTRAS DOWNLOADS : [LINK](https://www.github.com/crim-dev/BrackenPackExtras/releases)
+
 ## Presentation
 
 This is a version of the Bracken Datapack that aims at introducing community suggestions as well as other, unofficial projects for the sake of testing, archiving and openness with the community's members who are interested in contributing.
 
 Currently on version _v105_ of the Datapack
 
-This is NOT the real Github repository for the Bracken Pack.
+**This is NOT the real Github repository for the Bracken Pack.**
+
+## Shout-out
+
+A lot of optimizations and fixes were made by Conure512 on Discord, completely unexpected but absolutely welcome. I have taken the freedom (with Conure's consent) of integrating those within this repository.
+ 
+This was for preservation purposes, as I aim for this to be the main source of downloads for the Bracken Pack until Bracken's return.
+
+A lot of this might not make it into the official pack's codebase however, as it goes a few principles that Grandmaster set. We shall see. 
 
 ## Features 
-Currently introduced : 
+
+### Currently introduced : 
 
 - Hovering text to BSB (jakerson_) [made it into official pack!]
 
 - Custom armor trims for each dimension (by PaleFlesh) [made it into official pack!]
 
-Planned (sorted by order of priority/urgence) :
+### Planned (sorted by order of priority/urgence) :
 
 - Brine Portal explorer map (RaspyHarmony101)
 This one already had an implementation, I just need to make sure that it's adapted to v105 and we're basically good to go
@@ -41,7 +52,7 @@ This one isn't feasible without breaking compatibility with other datapacks, how
 - Resistance 5 instead of Weakness 10 in Pax (clanyfonelyx)
 
 
-Noticed : 
+### Noticed (not ordered) : 
 
 - Vitality helmet (SixLuckyBlocks)
 Cool and all but I don't plan to put this in the Extras yet
@@ -67,7 +78,7 @@ Interesting but idk how to do that one appropriately either, plus I'd need to bu
 - Mixing species (Casper2137) 
 Enormously complicated. I love it.
 
-Discarded : 
+### Discarded : 
 
 - Sculk species (Player)
 Just no. We already have enough on our hands from battling the Void, we don't need another anomaly, thank you.
