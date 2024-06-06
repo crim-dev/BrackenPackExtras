@@ -1,0 +1,27 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"stepping_on": {
+						"block": {
+							"blocks": "minecraft:conduit"
+						}
+					},
+					"effects": {
+						"minecraft:conduit_power": {}
+					},
+					"equipment": {
+						"mainhand": {
+							"items": "map"
+						}
+					}
+				}
+			}
+		}
+	},
+    "rewards": {
+        "function": "bracken:item/brine_entrance_map"
+    }
+}
