@@ -5,6 +5,8 @@
 
 advancement revoke @s only bracken:technical/dimension_travel/leave/pax
 
+function bracken:dimension_travel/rpg_title {"dimension":"Pax","color":"white"}
+
 attribute @s minecraft:generic.max_health modifier add e6c0ce48-1c54-427d-9f9f-32571e0a4f5a "bp.pax_health" 20 add_value
 attribute @s minecraft:generic.gravity modifier add e6c0ce48-1c54-427d-9f9f-32571e0a4f5a "bp.pax_gravity" -0.5 add_multiplied_base
 attribute @s minecraft:generic.safe_fall_distance modifier add e6c0ce48-1c54-427d-9f9f-32571e0a4f5a "bp.pax_safefall" 1000 add_multiplied_base

@@ -4,3 +4,5 @@
 ##############################################################
 
 advancement revoke @s only bracken:technical/dimension_travel/leave/the_underdark
+
+function bracken:dimension_travel/rpg_title {"dimension":"The Underdark", "color":"dark_gray"}

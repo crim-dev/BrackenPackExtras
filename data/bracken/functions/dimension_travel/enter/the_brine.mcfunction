@@ -4,3 +4,5 @@
 ##############################################################
 
 advancement revoke @s only bracken:technical/dimension_travel/leave/the_brine
+
+function bracken:dimension_travel/rpg_title {"dimension":"The Brine","color":"blue"}
