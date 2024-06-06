@@ -3,7 +3,7 @@
 # Creators: Bracken, Sulfenir, and Grandmaster
 ##########################################################
 
-function bracken:player/species/common/aquavulnerability
+execute unless predicate bracken:effect/water_breathing run function bracken:player/species/common/aquavulnerability
 
 execute unless predicate bracken:sneak run clear @p minecraft:ender_eye[minecraft:custom_data={bracken:{id:"enderling_controlled_teleport"}}]
 
