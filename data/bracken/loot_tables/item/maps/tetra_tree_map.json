@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Tetra Tree Map",
-					"color": "green"
+					"color": "green",
+					"italic": false
 				}
 			}]
 		}]

@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Omnidrome Palace Map",
-					"color": "green"
+					"color": "green",
+					"italic": false
 				}
 			}]
 		}]

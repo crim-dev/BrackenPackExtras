@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Pax Portal Map",
-					"color": "gold"
+					"color": "gold",
+					"italic": false
 				}
 			}]
 		}]

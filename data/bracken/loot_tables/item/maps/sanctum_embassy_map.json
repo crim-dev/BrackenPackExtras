@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Sanctum Embassy Map",
-					"color": "yellow"
+					"color": "yellow",
+					"italic": false
 				}
 			}]
 		}]

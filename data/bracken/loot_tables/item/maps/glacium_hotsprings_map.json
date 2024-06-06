@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Glacium Hotsprings Map",
-					"color": "aqua"
+					"color": "aqua",
+					"italic": false
 				}
 			}]
 		}]

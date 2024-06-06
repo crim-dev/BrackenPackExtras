@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Twice-Abandoned Mineshaft Map",
-					"color": "gray"
+					"color": "gray",
+					"italic": false
 				}
 			}]
 		}]

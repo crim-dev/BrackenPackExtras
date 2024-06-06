@@ -15,7 +15,8 @@
 				"function": "minecraft:set_name",
 				"name": {
 					"translate": "Dormis Courtyard Map",
-					"color": "dark_red"
+					"color": "dark_red",
+					"italic": false
 				}
 			}]
 		}]
