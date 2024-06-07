@@ -1,3 +1,6 @@
+CONURE'S EDITS V1
+-----------------
+
 Clean up the dimension tick:
 
 Edited function player/dimension_check:
@@ -156,6 +159,11 @@ Fixed Bug: Some functions under book_of_arbitruim/ask_race had no \ for line bre
 
 
 
+
+
+CONURE'S EDITS V2
+-----------------
+
 ---- Merged this pack with the Hunter-Apple bugfix introduced by Crimdev ----
 
 
@@ -244,3 +252,110 @@ Edited noise_settings file "the_brine":
 	The issue here was actually that the big complicated function was ALWAYS being referenced, and the input on the other side (which is just a value of 1) was being ignored. I went ahead and just deleted that value of 1.
 
 After doing this, it looks like all the MIN warnings are actually gone. Mission success.
+
+
+
+
+
+CONURE'S EDITS V3
+-----------------
+
+Species Tweaking
+
+Edited functions player/species/<speciesname>/leave:
+	Added a command to remove the player's team. Admins will now be able to type /function bracken:player/species/leave without being immediately added back to the same species.
+
+Faefolk now get their increased jumping abilities from attributes rather than an effect
+	Edited function player/species/faefolk/join:
+		Added a +50% jump_strength and +1 safe_fall_distance modifier (replicates the effect of Jump Boost 1)
+	Edited function player/species/faefolk/leave: Now removes the above modifiers
+	Edited function player/species/faefolk/tick: Removed jump boost effect command
+
+Enderlings' Controlled Teleport is now advancement-driven for both use-cases
+	Edited advancement technical/species/enderling/controlled_teleport:
+		Added an alternative trigger for throwing the eye of ender in a dimension with strongholds
+	Edited function player/species/enderling/tick:
+		Removed call to function player/species/enderling/controlled_teleport
+
+Edited function player/species/hunter/tick:
+	Hunger-Speed commands now test a range of morph scores rather than each one individually
+	Removed "run execute" (in a few other places as well)
+
+Netherkin dimension attributes are no longer checked every tick
+	Edited functions dimension_travel/enter/the_nether and dimension_travel/leave/the_nether:
+		Attack strength attribute is now granted/revoked respectively for Netherkin
+	Edited function player/species/netherkin/join:
+		Attribute is now granted if the player is already in the Nether
+	Edited function player/species/netherkin/tick: Removed nether strength commands
+	Attribute now uses add_multiplied_total instead of add_multiplied_base
+
+
+
+Bug Found: Dying in one dimension and respawning in another doesn't trigger dimension_changed advancements, so players could get around the dimension commands through death.
+
+Added function dimension_travel/force_update:
+	Re-calculates all dimension commands - calls the "join" function for the player's current dimension, and the "leave" command for all the others. Intended to be called as a fix for anytime a bug occurs where the player can get around the dimension commands, such as this one.
+
+Added Formal Respawn Tracking
+	Moved detection of objective bp.death from player/species/tick to player/tick
+	Added function player/respawn:
+		Called by player/tick when bp.death is exactly 1
+		Intended to run any commands that should run as soon as the player respawns
+		Currently calls functions dimension_travel/force_update and player/species/join
+
+
+
+---- Effect Immunity Rework ----
+Setting up advancements that detect effects, detect immunity, and clear the effect if immunity is found.
+
+Added predicates effect_immunity/<effectname>:
+	Return true if the checked player should be considered immune to the corresponding effect.
+
+Added advancements technical/effect_immunity/<effectname>:
+	Each advancement detects when you gain a certain effect via the "effects_changed" trigger
+	Advancements use the effect_immunity predicates to test immunity
+
+Added functions player/effect_immunity/<effectname>:
+	Called by the advancements, immediately revoke said advancement
+	Simply clear the player of the corresponding effect
+
+Moved "effect clear" commands between the following functions:
+	- player/species/frostkin/tick -> player/species/frostkin/join
+	- player/species/villain/tick -> player/species/villain/join
+	- dimension_commands/pax -> dimension_travel/enter/pax
+	- dimension_commands/sanctum -> dimension_travel/enter/sanctum
+	- item/glacium_glider -> equipment/glacium_glider/on
+		Moving these functions causes the effects to be cleared when you first take on a state (becoming a frostkin, entering pax, equipping the glider, etc). The passive immunity that comes later is covered by the advancements.
+
+Added checks for immunity before granting an effect in the following functions:
+	- player/species/outlander/tick
+	- player/species/villain/tick
+	- dimension_commands/sanctum
+	- dimension_commands/other/beacon_portal
+	- item/food/apples/carbon_apple
+
+Replaced objective bp.wither_immunity with predicate effect_immunity/wither in every function where it's referenced:
+	- dimension_commands/glacium
+	- player/species/common/aquavulnerability
+	- player/species/common/rain_damage
+	- player/species/netherkin/rain
+		Removed this function, as it is duplicated by player/species/common/rain_damage and never referenced
+
+Removed objective bp.wither_immunity - removed all commands manipulating the objective in these functions:
+	- item/main
+	- item/glacium_glider
+		Removed this function, as it no longer had any actual commands in it
+		Removed reference to it in function dimension_commands/other/pax_waters
+	- player/config_menu/uninstall/remove_all_scoreboards
+	- load
+
+Removed objective bp.glacium_glider (same process as bp.wither_immunity)
+
+
+
+Replaced the multiple boat check predicates with the in_water predicate in the following functions:
+	- player/species/automech/tick
+		Removed call to #bracken:waterloggable as well
+	- player/species/nereid/tick
+	- dimension_commands/glacium
+	- dimension_commands/pax

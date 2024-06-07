@@ -38,5 +38,8 @@ execute if data storage bracken:config {species_on: false} if entity @s[scores={
 function bracken:player/dimension_check
 function bracken:player/universal_dimension_commands
 
+# Respawning
+execute if score @s bp.death matches 1 run function bracken:player/respawn
+
 # Items
 function bracken:item/main

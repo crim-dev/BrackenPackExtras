@@ -20,9 +20,6 @@ scoreboard players set @s[predicate=bracken:item/wearing_wither_skull] bp.wither
 # panacea
 #scoreboard players set @s[predicate=bracken:item/wearing_creeper_head] bp.creeper 22
 
-# Glacium Glider
-#scoreboard players set @s[predicate=bracken:item/glacium_glider] bp.glacium_glider 22
-
 # Nightfall Glider
 #scoreboard players set @s[predicate=bracken:item/nightfall] bp.nightfall 22
 

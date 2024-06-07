@@ -78,10 +78,8 @@ scoreboard objectives remove bp.creeper
 scoreboard objectives remove bp.wither_skull 
 scoreboard objectives remove bp.gothrum_fang 
 scoreboard objectives remove bp.creeper_horn 
-scoreboard objectives remove bp.poison 
-scoreboard objectives remove bp.glacium_glider 
-scoreboard objectives remove bp.nightfall 
-scoreboard objectives remove bp.wither_immunity
+scoreboard objectives remove bp.poison
+scoreboard objectives remove bp.nightfall
 
 #astral potion
 scoreboard objectives remove bp.astral_time 
