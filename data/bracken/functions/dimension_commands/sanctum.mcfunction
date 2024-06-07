@@ -6,8 +6,7 @@
 #scoreboard players set @s bp.sanctum 10
 
 # Effects
-effect give @s[scores={bp.longtick=5},tag=!bp.outlander] minecraft:invisibility 13 0 true
-effect clear @s[tag=bp.outlander] minecraft:invisibility
+execute if score @s bp.longtick matches 5 run effect give @s[predicate=!bracken:effect_immunity/invisibility] minecraft:invisibility 13 0 true
 
 # Mobs
 execute if entity @s[scores={bp.tick=2,bp.sneakcharge=..1}] run function bracken:entities/sanctum/sanctum_entities

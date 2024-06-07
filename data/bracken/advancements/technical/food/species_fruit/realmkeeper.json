@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"use_fruit": {
+		"join": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
@@ -15,6 +15,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bracken:player/species/realmkeeper/use_fruit"
+		"function": "bracken:player/species/realmkeeper/join"
 	}
 }
