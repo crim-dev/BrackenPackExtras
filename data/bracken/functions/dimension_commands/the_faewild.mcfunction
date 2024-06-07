@@ -6,7 +6,6 @@
 #scoreboard players set @s bp.fae 10
 
 # Effects
-#effect give @s[scores={bp.longtick=6}] minecraft:jump_boost 13 1 true
 #effect give @s[predicate=bracken:sneak] minecraft:slow_falling 1 0 true
 experience add @s[scores={bp.longtick=1}] 1 points
 

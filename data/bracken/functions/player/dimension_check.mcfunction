@@ -5,8 +5,6 @@
 
 
 execute if predicate bracken:dimensions/overworld run return run function bracken:dimension_commands/overworld
-# This overworld command will stop the entire function if it runs. No need to put it in its own file.
-
 execute if predicate bracken:dimensions/dormis run return run function bracken:dimension_commands/dormis
 execute if predicate bracken:dimensions/glacium run return run function bracken:dimension_commands/glacium
 execute if predicate bracken:dimensions/omnidrome run return run function bracken:dimension_commands/omnidrome
