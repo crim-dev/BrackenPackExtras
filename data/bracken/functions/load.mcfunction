@@ -177,7 +177,7 @@ scoreboard objectives add bp.voidtp dummy
 scoreboard objectives add bp.void dummy
 
 # Varskspace
-data merge storage bp.vars {varskstorm:{stage:0}}
+data merge storage bracken:var {varskstorm:{stage:0}}
 scoreboard objectives add bp.varskstorm dummy
 scoreboard players set #cooldown bp.varskstorm 0
 scoreboard players set #repeat bp.varskstorm 0

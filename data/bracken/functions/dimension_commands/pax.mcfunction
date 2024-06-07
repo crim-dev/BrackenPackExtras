@@ -12,7 +12,7 @@ effect give @s[scores={bp.food=..18}] minecraft:saturation 1 0 true
 effect clear @s minecraft:poison
 
 effect clear @s minecraft:bad_omen
-execute unless predicate bracken:in_boat unless predicate bracken:in_chest_boat if block ~ ~ ~ minecraft:water run function bracken:dimension_commands/other/pax_waters
+execute if predicate bracken:in_water run function bracken:dimension_commands/other/pax_waters
 
 # Dimension Travel
 execute if score @s bp.1_second matches 8 if data storage bracken:config {dimension_travel: true} if entity @s[y=-15,dy=-300] run function bracken:dimension_crossing/pax_to_faewild

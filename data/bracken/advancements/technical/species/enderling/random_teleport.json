@@ -21,6 +21,6 @@
         }
     },
     "rewards": {
-        "function": "bracken:player/species/enderling/random_teleport"
+        "function": "bracken:player/species/enderling/tp/random_teleport"
     }
 }

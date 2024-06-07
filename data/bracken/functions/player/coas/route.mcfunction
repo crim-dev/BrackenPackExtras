@@ -1,5 +1,5 @@
 ##########################################################
-# Description: Activates abilities of coas items in mainhand
+# Description: Activates abilities of coas items
 # Creators: Sulfenir and Grandmaster
 ##########################################################
 

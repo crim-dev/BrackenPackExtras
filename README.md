@@ -28,29 +28,29 @@ A lot of this might not make it into the official pack's codebase however, as it
 
 - Hovering text to BSB (jakerson_) [made it into official pack!]
 
-- Custom armor trims for each dimension (by PaleFlesh) [made it into official pack!]
+- Custom armor trims for each dimension (by PaleFlesh) [made it into official pack!] Currently only acquirable through cheats (/function bracken:admin_commands/trimify)
 
-### Planned (sorted by order of priority/urgence) :
-
-- Brine Portal explorer map (RaspyHarmony101)
-This one already had an implementation, I just need to make sure that it's adapted to v105 and we're basically good to go
+- Brine Portal explorer map (RaspyHarmony101) : 
+Standing over an activated conduit with an empty map in the main hand will cause the map to be automatically filled in with the location of the closest Brine Entrance Portal.
 
 - Water resistance for aquasensitive races (no definite suggestor)
 Self-explanatory. 
 
 - RPG-style titles (j8ck)
 
+### Planned (sorted by order of priority/urgence) :
+
 - Crystal Caves explorer map / locater (SixLuckyBlocks)
 SLB with the clutch suggestions
+
+- Replace the tinted glass bubble during void travel (clanyfonelyx)
+I had plans to make a custom box that wouldn't break important stuff (like the End portal, or chests) but it got rebuked by the rest of the dev team, I'm gonna bring this back here eventually.
 
 - Custom Enchantments Beta (dev team)
 This one's gonna take a long while to implement, but it'll go into the official pack once it's done.
 
 - Brine fishing loot (pea_sh0ter#4650)
 This one isn't feasible without breaking compatibility with other datapacks, however it is veryyyy much interesting to me.
-
-- Resistance 5 instead of Weakness 10 in Pax (clanyfonelyx)
-
 
 ### Noticed (not ordered) : 
 
@@ -59,9 +59,6 @@ Cool and all but I don't plan to put this in the Extras yet
 
 - Species tweaks (jakerson_)
 Arbritrium :shush:
-
-- Replace the tinted glass bubble during void travel (clanyfonelyx)
-I had plans to make a custom box that wouldn't break important stuff (like the End portal, or chests) but it got rebuked by the rest of the dev team, I'm gonna bring this back here eventually.
 
 - Secret achievement for visiting all dimensions (clanyfonelyx)
 Might wanna make a 100% achievement instead
@@ -90,6 +87,9 @@ Implemented through v105
 
 - Brine geysers (pea_sh0ter#4650)
 Idk how to implement this one sorry
+
+- Resistance 5 instead of Weakness 10 in Pax (clanyfonelyx)
+New attributes made this suggestion irrelevant 
 
 ## Contributing
 

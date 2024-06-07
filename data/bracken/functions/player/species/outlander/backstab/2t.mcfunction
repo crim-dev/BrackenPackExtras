@@ -1,8 +1,7 @@
 ######################################################
 # Description : Backstabbing logic (runs every 2 ticks)
-# Creators : reNemesic
+# Creators : crimdev
 ######################################################
-
 
 execute as @e[tag=bp.outlander_backstab,distance=..5] at @s rotated as @s positioned ^ ^ ^-1.6 unless entity @a[tag=bp.outlander,distance=..1.5] run function bracken:player/species/outlander/backstab/cleanup
 
